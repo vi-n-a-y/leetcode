@@ -16,3 +16,29 @@
 // Explanation: 
 // rotate 1 steps to the right: [99,-1,-100,3]
 // rotate 2 steps to the right: [3,99,-1,-100]
+
+
+class Rotate Array {
+    public int[]  reverse(int[] nums, int i,int k) {
+
+       while(i<=k){
+        int temp=nums[i];
+        nums[i]=nums[k];
+        nums[k]=temp;
+        i++;
+        k--;
+
+       }
+       return nums;
+   
+    }
+    public void rotate(int[] nums,int k){
+        int n=nums.length;
+        k=k%n;//if k is greater than length of the array 
+        reverse(nums,0,n-1);
+         reverse(nums,0,k-1);
+         reverse(nums,k,n-1);
+
+    }
+}   
+
