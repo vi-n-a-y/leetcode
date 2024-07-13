@@ -12,7 +12,7 @@ Input: nums = [2,2,1,1,1,2,2]
 Output: 2
 
 class MajorityElement {
-    int h;
+  int h;
     public int majorityElement(int[] nums) {
         for(int i=0;i<nums.length;i++){
            int count=0;
@@ -20,11 +20,12 @@ class MajorityElement {
             if(nums[i]==nums[j]){
                 count++;
             }
+           
+           }
             if(count>nums.length/2){
                h=nums[i];
                break;
             }
-           }
         }
        
         return h;
