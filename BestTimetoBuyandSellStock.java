@@ -12,7 +12,7 @@ class BestTimetoBuyandSellStock{
                
                
             }
-             System.out.println(highest);
+             
         }
        return highest; 
     }
